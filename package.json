@@ -1,14 +1,16 @@
 {
   "name": "temp-express",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "debug": "node --inspect-brk=9494 ./bin/www" 
   },
   "dependencies": {
     "boom": "^7.3.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
+    "dayjs": "^1.11.7",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
@@ -19,5 +21,11 @@
     "mddir": "^1.1.1",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier-eslint": "^15.0.1"
   }
 }

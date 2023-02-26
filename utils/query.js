@@ -1,10 +1,7 @@
-/**
- * 数据库连接查询
- * 使用：
- *  const { query, queryOne } = require('../utils/query');
- */
+/**  数据库连接查询 */
+
 const mysql = require("mysql");
-const option = require("../config/dbConfig");
+const option = require("../db/dbConfig");
 
 /**
  * 查询所有
@@ -35,14 +32,14 @@ function query(sql, value) {
 function queryOne(sql, value) {
   return new Promise((resolve, reject) => {
     query(sql, value)
-      .then((res) => {
+      .then(res => {
         res && res.length > 0 ? resolve(res[0]) : resolve(null);
       })
-      .catch((err) => reject(err));
+      .catch(err => reject(err));
   });
 }
 
 module.exports = {
   query,
-  queryOne,
+  queryOne
 };

@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
+    commonjs: true,
     es6: true,
     node: true
   },
@@ -13,28 +13,15 @@ module.exports = {
     turf: true
   },
   extends: [
-    "plugin:vue/essential", //继承 vue 的标准特性
     "eslint:recommended",
     "plugin:prettier/recommended" //避免与prettier冲突 recommended 推荐；
   ],
   parserOptions: {
-    ecmaVersion: 2016,
+    ecmaVersion: 2018,
     sourceType: "module",
     parser: "babel-eslint"
   },
   rules: {
-    "vue/max-attributes-per-line": [
-      2,
-      {
-        singleline: { max: 5 },
-        multiline: { max: 5 }
-      }
-    ],
-    "vue/singleline-html-element-content-newline": 0,
-    "vue/multiline-html-element-content-newline": 0,
-    "vue/name-property-casing": ["error", "PascalCase"],
-    "vue/multi-word-component-names": 0, //组件名多个单词
-    "vue/no-v-html": "off", // 禁用v-html
     "accessor-pairs": 2,
     "arrow-spacing": 2,
     "block-spacing": [2, "always"],
@@ -104,7 +91,7 @@ module.exports = {
         allowSingleLine: true
       }
     ],
-    "callback-return": 2,
+    "callback-return": 0,
     "computed-property-spacing": [2, "never"],
     "dot-location": [2, "property"],
     // 此处关闭prettier的规则提示
