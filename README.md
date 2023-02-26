@@ -1,25 +1,25 @@
 # temp_express
 ## 一、项目结构
 
-├─ bin            bin目录				
-│  ├─ www	        项目入口文件
-├─ db	 
-│  ├─ dbConfig    数据库连接配置   
+├─ bin            bin目录    
+│  ├─ www	        项目入口文件    
+├─ db    
+│  ├─ dbConfig    数据库连接配置    
 ├─ log		        日志文件    
-├─ public		      静态资源
-├─ routes	        路由配置		
-├─ services	      业务处理		
-├─ utils	        公用方法、工具
-│  ├─ constant    常量定义  
-│  ├─ jwt         tokne验证
-│  ├─ logger      日志相关操作	
-│  ├─ md5         md5加密解密		
-│  ├─ query       sql查询封装	
-├─ views	        页面
-├─ app.js	        express 入口
-├─ .eslintrc.js	  eslint 配置
-├─ package.json	  项目依赖包配置
-├─ README.md	    项目说明
+├─ public		      静态资源    
+├─ routes	        路由配置    
+├─ services	      业务处理    
+├─ utils	        公用方法、工具    
+│  ├─ constant    常量定义    
+│  ├─ jwt         tokne验证    
+│  ├─ logger      日志相关操作    
+│  ├─ md5         md5加密解密    
+│  ├─ query       sql查询封装    
+├─ views	        页面    
+├─ app.js	        express 入口    
+├─ .eslintrc.js	  eslint 配置    
+├─ package.json	  项目依赖包配置    
+├─ README.md	    项目说明    
 
 ## 二、项目说明
 Node、Express、MySQL项目模板
