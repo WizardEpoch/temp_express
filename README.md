@@ -1,9 +1,9 @@
 # temp_express
 ## 一、项目结构
 
-├─ bin            bin目录				
-│  ├─ www	        项目入口文件
-├─ db	 
+├─ bin            bin目录 			
+│  ├─ www	        项目入口文件  
+├─ db 
 │  ├─ dbConfig    数据库连接配置   
 ├─ log		        日志文件    
 ├─ public		      静态资源
